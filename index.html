@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		h1, h2, h3, p {
+			color: white;
+		}
+		
+		#myPhoto {
+			width: 400px;
+			height: 550px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		
+		#darksoulspick {
+			width: 400px;
+			height: 550px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		
+		h1 {
+			font-weight: italic;
+			color: #ff0000;
+			word-wrap: break-word;
+		}
+		
+		h2 {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		
+		body {
+			background-color: black;
+			flex-direction: column;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		
+		.container {
+			display: flex;
+			padding: 20px;
+			border: 2px solid white;
+			margin-bottom: 20px;
+			width: 800px;
+		}
+		
+		.container2 {
+			display: flex;
+			padding: 20px;
+			border: 2px solid red;
+			margin-bottom: 20px;
+			flex-direction: column;
+			align-items: center; 
+			width: 800px;
+		}
+		
+		#audio {
+			margin-bottom: 20px;
+			order: 1; 
+		}
+		
+		.video {
+			order: 2; 
+		}
+	</style>
+</head>
+
+<body>
+<h1>Esse É Meu Jeito Video De Ser</h1>
+
+<div class="container">
+    <div class="coluna">
+        <h2>Meu jeito de ser</h2>
+        <img src="eu.jpeg" alt="Eu" id="myPhoto">
+    </div>
+    
+    <div class="coluna">
+        <h2>Meu jeito gamer de ser</h2>
+        <img src="darksouls.jpg" alt="Eu" id="darksoulspick">
+    </div>
+</div>
+
+<div class="container2">
+	<div class="coluna">
+		<audio controls id="audio">
+			<source src="apresentacao.ogg" type="audio/ogg">
+			<source src="apresentacao.mp3" type="audio/mpeg">
+			Your browser does not support the audio element.
+		</audio>
+	</div>
+
+	<div class="coluna video">
+		<iframe 
+			width="560" height="315" src="https://www.youtube.com/embed/8CltgMtLe1U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+		</iframe>
+	</div>
+</div>
+
+<p>Algumas vezes video game pode ser mais do que diversão, na maioria das vezes é o puro fluir da arte. Esse é meu jeito de ver video, qual o seu?</p>
+</body>
+</html>
